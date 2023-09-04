@@ -11,7 +11,7 @@ import Foundation
 enum DemoStates {
     
     case mqttConnectRequestSent(from: String)
-    
+    case receiveMessage(from: String)
     
     /// A short description of the notification.
     /// - Returns: Returns a short description of the notification.
@@ -19,7 +19,8 @@ enum DemoStates {
         switch self {
             
         case .mqttConnectRequestSent(from: let user):    return "\(user) send connect request through mqtt."
-            
+        
+        case .receiveMessage(from: let user):   return "Receive message from \(user)"
         }
     }
 }
