@@ -1,0 +1,902 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1913B4E53EA41171F97D2B66 /* Pods_DemoSecureChat_DemoSecureChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88540EBDA612A199F658A809 /* Pods_DemoSecureChat_DemoSecureChatUITests.framework */; };
+		352CC2082A9C91D7008B3626 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CC2072A9C91D7008B3626 /* UIScreen+Extension.swift */; };
+		355F858F2A9B5B2900B9B97F /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355F858D2A9B5B2800B9B97F /* UIApplication+Extension.swift */; };
+		355F85902A9B5B2900B9B97F /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355F858E2A9B5B2800B9B97F /* String+Extension.swift */; };
+		355F85942A9B5B7400B9B97F /* MQTTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355F85922A9B5B7400B9B97F /* MQTTClient.swift */; };
+		355F85952A9B5B7400B9B97F /* MQTTTopicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355F85932A9B5B7400B9B97F /* MQTTTopicType.swift */; };
+		355F85A02A9B5BBE00B9B97F /* EncryptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355F85972A9B5BBE00B9B97F /* EncryptionHelper.swift */; };
+		355F85A12A9B5BBE00B9B97F /* DemoSenderKeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355F85992A9B5BBE00B9B97F /* DemoSenderKeyStore.swift */; };
+		355F85A22A9B5BBE00B9B97F /* DemoSignalSessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355F859A2A9B5BBE00B9B97F /* DemoSignalSessionStore.swift */; };
+		355F85A32A9B5BBE00B9B97F /* DemoIdentityKeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355F859B2A9B5BBE00B9B97F /* DemoIdentityKeyStore.swift */; };
+		355F85A42A9B5BBE00B9B97F /* DemoSignedPrekeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355F859C2A9B5BBE00B9B97F /* DemoSignedPrekeyStore.swift */; };
+		355F85A52A9B5BBE00B9B97F /* DemoPreKeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355F859D2A9B5BBE00B9B97F /* DemoPreKeyStore.swift */; };
+		355F85A62A9B5BBE00B9B97F /* EncodablePrekey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355F859E2A9B5BBE00B9B97F /* EncodablePrekey.swift */; };
+		355F85AA2A9B635800B9B97F /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355F85A92A9B635800B9B97F /* MessageModel.swift */; };
+		355F85AC2A9B67C500B9B97F /* MQTTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355F85AB2A9B67C500B9B97F /* MQTTManager.swift */; };
+		355F85AF2A9B6A1600B9B97F /* MessageConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355F85AE2A9B6A1600B9B97F /* MessageConnectionManager.swift */; };
+		356B67D92AA597B5007F5EEB /* TestPreKeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B67D42AA597B5007F5EEB /* TestPreKeyStore.swift */; };
+		356B67DA2AA597B5007F5EEB /* TestIdentityKeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B67D52AA597B5007F5EEB /* TestIdentityKeyStore.swift */; };
+		356B67DB2AA597B5007F5EEB /* TestSenderKeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B67D62AA597B5007F5EEB /* TestSenderKeyStore.swift */; };
+		356B67DC2AA597B5007F5EEB /* TestSessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B67D72AA597B5007F5EEB /* TestSessionStore.swift */; };
+		356B67DD2AA597B5007F5EEB /* TestSignedPrekeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B67D82AA597B5007F5EEB /* TestSignedPrekeyStore.swift */; };
+		356B67E02AA5A0BB007F5EEB /* UserEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B67DF2AA5A0BB007F5EEB /* UserEnum.swift */; };
+		356B67E32AA5A42A007F5EEB /* DemoLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B67E22AA5A42A007F5EEB /* DemoLog.swift */; };
+		356B67E52AA5A45E007F5EEB /* DemoStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B67E42AA5A45E007F5EEB /* DemoStates.swift */; };
+		35E9B9382A9B5732007A3073 /* DemoSecureChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E9B9372A9B5732007A3073 /* DemoSecureChatApp.swift */; };
+		35E9B93A2A9B5732007A3073 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E9B9392A9B5732007A3073 /* ContentView.swift */; };
+		35E9B93C2A9B5735007A3073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35E9B93B2A9B5735007A3073 /* Assets.xcassets */; };
+		35E9B93F2A9B5735007A3073 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35E9B93E2A9B5735007A3073 /* Preview Assets.xcassets */; };
+		35E9B9492A9B5735007A3073 /* DemoSecureChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E9B9482A9B5735007A3073 /* DemoSecureChatTests.swift */; };
+		35E9B9532A9B5735007A3073 /* DemoSecureChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E9B9522A9B5735007A3073 /* DemoSecureChatUITests.swift */; };
+		35E9B9552A9B5735007A3073 /* DemoSecureChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E9B9542A9B5735007A3073 /* DemoSecureChatUITestsLaunchTests.swift */; };
+		878586907E8B93A38697C68D /* Pods_DemoSecureChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89607C298C0F7571C0D7FA5D /* Pods_DemoSecureChatTests.framework */; };
+		B1D6166C113F8403CC05BF70 /* Pods_DemoSecureChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3879D74C88737CAFD0D479 /* Pods_DemoSecureChat.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35E9B9452A9B5735007A3073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35E9B92C2A9B5732007A3073 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35E9B9332A9B5732007A3073;
+			remoteInfo = DemoSecureChat;
+		};
+		35E9B94F2A9B5735007A3073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35E9B92C2A9B5732007A3073 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35E9B9332A9B5732007A3073;
+			remoteInfo = DemoSecureChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		352CC2062A9C90A2008B3626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		352CC2072A9C91D7008B3626 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
+		355F858D2A9B5B2800B9B97F /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		355F858E2A9B5B2800B9B97F /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		355F85922A9B5B7400B9B97F /* MQTTClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTTClient.swift; sourceTree = "<group>"; };
+		355F85932A9B5B7400B9B97F /* MQTTTopicType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTTTopicType.swift; sourceTree = "<group>"; };
+		355F85972A9B5BBE00B9B97F /* EncryptionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionHelper.swift; sourceTree = "<group>"; };
+		355F85992A9B5BBE00B9B97F /* DemoSenderKeyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoSenderKeyStore.swift; sourceTree = "<group>"; };
+		355F859A2A9B5BBE00B9B97F /* DemoSignalSessionStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoSignalSessionStore.swift; sourceTree = "<group>"; };
+		355F859B2A9B5BBE00B9B97F /* DemoIdentityKeyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoIdentityKeyStore.swift; sourceTree = "<group>"; };
+		355F859C2A9B5BBE00B9B97F /* DemoSignedPrekeyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoSignedPrekeyStore.swift; sourceTree = "<group>"; };
+		355F859D2A9B5BBE00B9B97F /* DemoPreKeyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPreKeyStore.swift; sourceTree = "<group>"; };
+		355F859E2A9B5BBE00B9B97F /* EncodablePrekey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodablePrekey.swift; sourceTree = "<group>"; };
+		355F85A92A9B635800B9B97F /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		355F85AB2A9B67C500B9B97F /* MQTTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTManager.swift; sourceTree = "<group>"; };
+		355F85AE2A9B6A1600B9B97F /* MessageConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageConnectionManager.swift; sourceTree = "<group>"; };
+		356B67D42AA597B5007F5EEB /* TestPreKeyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPreKeyStore.swift; sourceTree = "<group>"; };
+		356B67D52AA597B5007F5EEB /* TestIdentityKeyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestIdentityKeyStore.swift; sourceTree = "<group>"; };
+		356B67D62AA597B5007F5EEB /* TestSenderKeyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSenderKeyStore.swift; sourceTree = "<group>"; };
+		356B67D72AA597B5007F5EEB /* TestSessionStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSessionStore.swift; sourceTree = "<group>"; };
+		356B67D82AA597B5007F5EEB /* TestSignedPrekeyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSignedPrekeyStore.swift; sourceTree = "<group>"; };
+		356B67DF2AA5A0BB007F5EEB /* UserEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEnum.swift; sourceTree = "<group>"; };
+		356B67E22AA5A42A007F5EEB /* DemoLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoLog.swift; sourceTree = "<group>"; };
+		356B67E42AA5A45E007F5EEB /* DemoStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoStates.swift; sourceTree = "<group>"; };
+		35E9B9342A9B5732007A3073 /* DemoSecureChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoSecureChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E9B9372A9B5732007A3073 /* DemoSecureChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSecureChatApp.swift; sourceTree = "<group>"; };
+		35E9B9392A9B5732007A3073 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		35E9B93B2A9B5735007A3073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35E9B93E2A9B5735007A3073 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		35E9B9442A9B5735007A3073 /* DemoSecureChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoSecureChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E9B9482A9B5735007A3073 /* DemoSecureChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSecureChatTests.swift; sourceTree = "<group>"; };
+		35E9B94E2A9B5735007A3073 /* DemoSecureChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoSecureChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E9B9522A9B5735007A3073 /* DemoSecureChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSecureChatUITests.swift; sourceTree = "<group>"; };
+		35E9B9542A9B5735007A3073 /* DemoSecureChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSecureChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		41A36F5BA59731E64B8093E7 /* Pods-DemoSecureChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSecureChat.release.xcconfig"; path = "Target Support Files/Pods-DemoSecureChat/Pods-DemoSecureChat.release.xcconfig"; sourceTree = "<group>"; };
+		74AAD57C63774524C4DC11AD /* Pods-DemoSecureChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSecureChatTests.release.xcconfig"; path = "Target Support Files/Pods-DemoSecureChatTests/Pods-DemoSecureChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		7CDF38E0913C05B24D44CEFD /* Pods-DemoSecureChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSecureChatTests.debug.xcconfig"; path = "Target Support Files/Pods-DemoSecureChatTests/Pods-DemoSecureChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		88540EBDA612A199F658A809 /* Pods_DemoSecureChat_DemoSecureChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoSecureChat_DemoSecureChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89607C298C0F7571C0D7FA5D /* Pods_DemoSecureChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoSecureChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC3879D74C88737CAFD0D479 /* Pods_DemoSecureChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoSecureChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9F8F867C11156B8C8A72C1D /* Pods-DemoSecureChat-DemoSecureChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSecureChat-DemoSecureChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-DemoSecureChat-DemoSecureChatUITests/Pods-DemoSecureChat-DemoSecureChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE0ECECF29DF3426CEE3C794 /* Pods-DemoSecureChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSecureChat.debug.xcconfig"; path = "Target Support Files/Pods-DemoSecureChat/Pods-DemoSecureChat.debug.xcconfig"; sourceTree = "<group>"; };
+		FC23EA9BE41BE5E675CA0AFA /* Pods-DemoSecureChat-DemoSecureChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSecureChat-DemoSecureChatUITests.release.xcconfig"; path = "Target Support Files/Pods-DemoSecureChat-DemoSecureChatUITests/Pods-DemoSecureChat-DemoSecureChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35E9B9312A9B5732007A3073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1D6166C113F8403CC05BF70 /* Pods_DemoSecureChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E9B9412A9B5735007A3073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				878586907E8B93A38697C68D /* Pods_DemoSecureChatTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E9B94B2A9B5735007A3073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1913B4E53EA41171F97D2B66 /* Pods_DemoSecureChat_DemoSecureChatUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B38294F32028DB8ED757B4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE0ECECF29DF3426CEE3C794 /* Pods-DemoSecureChat.debug.xcconfig */,
+				41A36F5BA59731E64B8093E7 /* Pods-DemoSecureChat.release.xcconfig */,
+				C9F8F867C11156B8C8A72C1D /* Pods-DemoSecureChat-DemoSecureChatUITests.debug.xcconfig */,
+				FC23EA9BE41BE5E675CA0AFA /* Pods-DemoSecureChat-DemoSecureChatUITests.release.xcconfig */,
+				7CDF38E0913C05B24D44CEFD /* Pods-DemoSecureChatTests.debug.xcconfig */,
+				74AAD57C63774524C4DC11AD /* Pods-DemoSecureChatTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		355F858C2A9B5B2800B9B97F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				355F858D2A9B5B2800B9B97F /* UIApplication+Extension.swift */,
+				355F858E2A9B5B2800B9B97F /* String+Extension.swift */,
+				352CC2072A9C91D7008B3626 /* UIScreen+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		355F85912A9B5B7400B9B97F /* MQTTDemo */ = {
+			isa = PBXGroup;
+			children = (
+				355F85922A9B5B7400B9B97F /* MQTTClient.swift */,
+				355F85932A9B5B7400B9B97F /* MQTTTopicType.swift */,
+				355F85AB2A9B67C500B9B97F /* MQTTManager.swift */,
+			);
+			path = MQTTDemo;
+			sourceTree = "<group>";
+		};
+		355F85962A9B5BBE00B9B97F /* EncryptionHelper */ = {
+			isa = PBXGroup;
+			children = (
+				355F85972A9B5BBE00B9B97F /* EncryptionHelper.swift */,
+				355F85982A9B5BBE00B9B97F /* SignalModels */,
+				355F859E2A9B5BBE00B9B97F /* EncodablePrekey.swift */,
+			);
+			path = EncryptionHelper;
+			sourceTree = "<group>";
+		};
+		355F85982A9B5BBE00B9B97F /* SignalModels */ = {
+			isa = PBXGroup;
+			children = (
+				355F85992A9B5BBE00B9B97F /* DemoSenderKeyStore.swift */,
+				355F859A2A9B5BBE00B9B97F /* DemoSignalSessionStore.swift */,
+				355F859B2A9B5BBE00B9B97F /* DemoIdentityKeyStore.swift */,
+				355F859C2A9B5BBE00B9B97F /* DemoSignedPrekeyStore.swift */,
+				355F859D2A9B5BBE00B9B97F /* DemoPreKeyStore.swift */,
+			);
+			path = SignalModels;
+			sourceTree = "<group>";
+		};
+		355F85A82A9B634700B9B97F /* MessageModel */ = {
+			isa = PBXGroup;
+			children = (
+				355F85A92A9B635800B9B97F /* MessageModel.swift */,
+			);
+			path = MessageModel;
+			sourceTree = "<group>";
+		};
+		355F85AD2A9B69D500B9B97F /* MessageManager */ = {
+			isa = PBXGroup;
+			children = (
+				355F85AE2A9B6A1600B9B97F /* MessageConnectionManager.swift */,
+			);
+			path = MessageManager;
+			sourceTree = "<group>";
+		};
+		356B67DE2AA5A0A8007F5EEB /* UserModel */ = {
+			isa = PBXGroup;
+			children = (
+				356B67DF2AA5A0BB007F5EEB /* UserEnum.swift */,
+			);
+			path = UserModel;
+			sourceTree = "<group>";
+		};
+		356B67E12AA5A407007F5EEB /* DemoLog */ = {
+			isa = PBXGroup;
+			children = (
+				356B67E22AA5A42A007F5EEB /* DemoLog.swift */,
+				356B67E42AA5A45E007F5EEB /* DemoStates.swift */,
+			);
+			path = DemoLog;
+			sourceTree = "<group>";
+		};
+		35E9B92B2A9B5732007A3073 = {
+			isa = PBXGroup;
+			children = (
+				35E9B9362A9B5732007A3073 /* DemoSecureChat */,
+				35E9B9472A9B5735007A3073 /* DemoSecureChatTests */,
+				35E9B9512A9B5735007A3073 /* DemoSecureChatUITests */,
+				35E9B9352A9B5732007A3073 /* Products */,
+				1B38294F32028DB8ED757B4E /* Pods */,
+				A5451B9DBCAF81A7581EC839 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		35E9B9352A9B5732007A3073 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35E9B9342A9B5732007A3073 /* DemoSecureChat.app */,
+				35E9B9442A9B5735007A3073 /* DemoSecureChatTests.xctest */,
+				35E9B94E2A9B5735007A3073 /* DemoSecureChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35E9B9362A9B5732007A3073 /* DemoSecureChat */ = {
+			isa = PBXGroup;
+			children = (
+				356B67E12AA5A407007F5EEB /* DemoLog */,
+				356B67DE2AA5A0A8007F5EEB /* UserModel */,
+				352CC2062A9C90A2008B3626 /* Info.plist */,
+				355F85AD2A9B69D500B9B97F /* MessageManager */,
+				355F85A82A9B634700B9B97F /* MessageModel */,
+				355F85962A9B5BBE00B9B97F /* EncryptionHelper */,
+				355F85912A9B5B7400B9B97F /* MQTTDemo */,
+				355F858C2A9B5B2800B9B97F /* Extensions */,
+				35E9B9372A9B5732007A3073 /* DemoSecureChatApp.swift */,
+				35E9B9392A9B5732007A3073 /* ContentView.swift */,
+				35E9B93B2A9B5735007A3073 /* Assets.xcassets */,
+				35E9B93D2A9B5735007A3073 /* Preview Content */,
+			);
+			path = DemoSecureChat;
+			sourceTree = "<group>";
+		};
+		35E9B93D2A9B5735007A3073 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				35E9B93E2A9B5735007A3073 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		35E9B9472A9B5735007A3073 /* DemoSecureChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				356B67D52AA597B5007F5EEB /* TestIdentityKeyStore.swift */,
+				356B67D42AA597B5007F5EEB /* TestPreKeyStore.swift */,
+				356B67D62AA597B5007F5EEB /* TestSenderKeyStore.swift */,
+				356B67D72AA597B5007F5EEB /* TestSessionStore.swift */,
+				356B67D82AA597B5007F5EEB /* TestSignedPrekeyStore.swift */,
+				35E9B9482A9B5735007A3073 /* DemoSecureChatTests.swift */,
+			);
+			path = DemoSecureChatTests;
+			sourceTree = "<group>";
+		};
+		35E9B9512A9B5735007A3073 /* DemoSecureChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				35E9B9522A9B5735007A3073 /* DemoSecureChatUITests.swift */,
+				35E9B9542A9B5735007A3073 /* DemoSecureChatUITestsLaunchTests.swift */,
+			);
+			path = DemoSecureChatUITests;
+			sourceTree = "<group>";
+		};
+		A5451B9DBCAF81A7581EC839 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC3879D74C88737CAFD0D479 /* Pods_DemoSecureChat.framework */,
+				88540EBDA612A199F658A809 /* Pods_DemoSecureChat_DemoSecureChatUITests.framework */,
+				89607C298C0F7571C0D7FA5D /* Pods_DemoSecureChatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35E9B9332A9B5732007A3073 /* DemoSecureChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35E9B9582A9B5735007A3073 /* Build configuration list for PBXNativeTarget "DemoSecureChat" */;
+			buildPhases = (
+				5C2CB41A44A289D03F2FF89A /* [CP] Check Pods Manifest.lock */,
+				35E9B9302A9B5732007A3073 /* Sources */,
+				35E9B9312A9B5732007A3073 /* Frameworks */,
+				35E9B9322A9B5732007A3073 /* Resources */,
+				93E39BA1B57EB8B1ACBECE68 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoSecureChat;
+			productName = DemoSecureChat;
+			productReference = 35E9B9342A9B5732007A3073 /* DemoSecureChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		35E9B9432A9B5735007A3073 /* DemoSecureChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35E9B95B2A9B5735007A3073 /* Build configuration list for PBXNativeTarget "DemoSecureChatTests" */;
+			buildPhases = (
+				5750C6EB93052DB30E3F217B /* [CP] Check Pods Manifest.lock */,
+				35E9B9402A9B5735007A3073 /* Sources */,
+				35E9B9412A9B5735007A3073 /* Frameworks */,
+				35E9B9422A9B5735007A3073 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35E9B9462A9B5735007A3073 /* PBXTargetDependency */,
+			);
+			name = DemoSecureChatTests;
+			productName = DemoSecureChatTests;
+			productReference = 35E9B9442A9B5735007A3073 /* DemoSecureChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		35E9B94D2A9B5735007A3073 /* DemoSecureChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35E9B95E2A9B5735007A3073 /* Build configuration list for PBXNativeTarget "DemoSecureChatUITests" */;
+			buildPhases = (
+				C9EF2505BDDBD044EFA5CFA9 /* [CP] Check Pods Manifest.lock */,
+				35E9B94A2A9B5735007A3073 /* Sources */,
+				35E9B94B2A9B5735007A3073 /* Frameworks */,
+				35E9B94C2A9B5735007A3073 /* Resources */,
+				BFCF7C4A659ACDB5BD2CF8FF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35E9B9502A9B5735007A3073 /* PBXTargetDependency */,
+			);
+			name = DemoSecureChatUITests;
+			productName = DemoSecureChatUITests;
+			productReference = 35E9B94E2A9B5735007A3073 /* DemoSecureChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35E9B92C2A9B5732007A3073 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					35E9B9332A9B5732007A3073 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					35E9B9432A9B5735007A3073 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 35E9B9332A9B5732007A3073;
+					};
+					35E9B94D2A9B5735007A3073 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 35E9B9332A9B5732007A3073;
+					};
+				};
+			};
+			buildConfigurationList = 35E9B92F2A9B5732007A3073 /* Build configuration list for PBXProject "DemoSecureChat" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35E9B92B2A9B5732007A3073;
+			productRefGroup = 35E9B9352A9B5732007A3073 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35E9B9332A9B5732007A3073 /* DemoSecureChat */,
+				35E9B9432A9B5735007A3073 /* DemoSecureChatTests */,
+				35E9B94D2A9B5735007A3073 /* DemoSecureChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35E9B9322A9B5732007A3073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E9B93F2A9B5735007A3073 /* Preview Assets.xcassets in Resources */,
+				35E9B93C2A9B5735007A3073 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E9B9422A9B5735007A3073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E9B94C2A9B5735007A3073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5750C6EB93052DB30E3F217B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoSecureChatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C2CB41A44A289D03F2FF89A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoSecureChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93E39BA1B57EB8B1ACBECE68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoSecureChat/Pods-DemoSecureChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoSecureChat/Pods-DemoSecureChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoSecureChat/Pods-DemoSecureChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFCF7C4A659ACDB5BD2CF8FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoSecureChat-DemoSecureChatUITests/Pods-DemoSecureChat-DemoSecureChatUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoSecureChat-DemoSecureChatUITests/Pods-DemoSecureChat-DemoSecureChatUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoSecureChat-DemoSecureChatUITests/Pods-DemoSecureChat-DemoSecureChatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9EF2505BDDBD044EFA5CFA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoSecureChat-DemoSecureChatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35E9B9302A9B5732007A3073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				356B67E52AA5A45E007F5EEB /* DemoStates.swift in Sources */,
+				355F85902A9B5B2900B9B97F /* String+Extension.swift in Sources */,
+				35E9B93A2A9B5732007A3073 /* ContentView.swift in Sources */,
+				355F85942A9B5B7400B9B97F /* MQTTClient.swift in Sources */,
+				355F85952A9B5B7400B9B97F /* MQTTTopicType.swift in Sources */,
+				356B67E02AA5A0BB007F5EEB /* UserEnum.swift in Sources */,
+				352CC2082A9C91D7008B3626 /* UIScreen+Extension.swift in Sources */,
+				355F85A22A9B5BBE00B9B97F /* DemoSignalSessionStore.swift in Sources */,
+				355F85AF2A9B6A1600B9B97F /* MessageConnectionManager.swift in Sources */,
+				355F85A42A9B5BBE00B9B97F /* DemoSignedPrekeyStore.swift in Sources */,
+				356B67E32AA5A42A007F5EEB /* DemoLog.swift in Sources */,
+				355F858F2A9B5B2900B9B97F /* UIApplication+Extension.swift in Sources */,
+				355F85A32A9B5BBE00B9B97F /* DemoIdentityKeyStore.swift in Sources */,
+				35E9B9382A9B5732007A3073 /* DemoSecureChatApp.swift in Sources */,
+				355F85AA2A9B635800B9B97F /* MessageModel.swift in Sources */,
+				355F85A02A9B5BBE00B9B97F /* EncryptionHelper.swift in Sources */,
+				355F85A52A9B5BBE00B9B97F /* DemoPreKeyStore.swift in Sources */,
+				355F85AC2A9B67C500B9B97F /* MQTTManager.swift in Sources */,
+				355F85A62A9B5BBE00B9B97F /* EncodablePrekey.swift in Sources */,
+				355F85A12A9B5BBE00B9B97F /* DemoSenderKeyStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E9B9402A9B5735007A3073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E9B9492A9B5735007A3073 /* DemoSecureChatTests.swift in Sources */,
+				356B67D92AA597B5007F5EEB /* TestPreKeyStore.swift in Sources */,
+				356B67DC2AA597B5007F5EEB /* TestSessionStore.swift in Sources */,
+				356B67DB2AA597B5007F5EEB /* TestSenderKeyStore.swift in Sources */,
+				356B67DA2AA597B5007F5EEB /* TestIdentityKeyStore.swift in Sources */,
+				356B67DD2AA597B5007F5EEB /* TestSignedPrekeyStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E9B94A2A9B5735007A3073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E9B9552A9B5735007A3073 /* DemoSecureChatUITestsLaunchTests.swift in Sources */,
+				35E9B9532A9B5735007A3073 /* DemoSecureChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35E9B9462A9B5735007A3073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35E9B9332A9B5732007A3073 /* DemoSecureChat */;
+			targetProxy = 35E9B9452A9B5735007A3073 /* PBXContainerItemProxy */;
+		};
+		35E9B9502A9B5735007A3073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35E9B9332A9B5732007A3073 /* DemoSecureChat */;
+			targetProxy = 35E9B94F2A9B5735007A3073 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		35E9B9562A9B5735007A3073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		35E9B9572A9B5735007A3073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35E9B9592A9B5735007A3073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE0ECECF29DF3426CEE3C794 /* Pods-DemoSecureChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DemoSecureChat/Preview Content\"";
+				DEVELOPMENT_TEAM = 5QKQYBS38P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoSecureChat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccp.com.demo.DemoSecureChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35E9B95A2A9B5735007A3073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A36F5BA59731E64B8093E7 /* Pods-DemoSecureChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DemoSecureChat/Preview Content\"";
+				DEVELOPMENT_TEAM = 5QKQYBS38P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoSecureChat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccp.com.demo.DemoSecureChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		35E9B95C2A9B5735007A3073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CDF38E0913C05B24D44CEFD /* Pods-DemoSecureChatTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5QKQYBS38P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccp.com.demo.DemoSecureChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoSecureChat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DemoSecureChat";
+			};
+			name = Debug;
+		};
+		35E9B95D2A9B5735007A3073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74AAD57C63774524C4DC11AD /* Pods-DemoSecureChatTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5QKQYBS38P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccp.com.demo.DemoSecureChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoSecureChat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DemoSecureChat";
+			};
+			name = Release;
+		};
+		35E9B95F2A9B5735007A3073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9F8F867C11156B8C8A72C1D /* Pods-DemoSecureChat-DemoSecureChatUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5QKQYBS38P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccp.com.demo.DemoSecureChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DemoSecureChat;
+			};
+			name = Debug;
+		};
+		35E9B9602A9B5735007A3073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC23EA9BE41BE5E675CA0AFA /* Pods-DemoSecureChat-DemoSecureChatUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5QKQYBS38P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccp.com.demo.DemoSecureChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DemoSecureChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35E9B92F2A9B5732007A3073 /* Build configuration list for PBXProject "DemoSecureChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E9B9562A9B5735007A3073 /* Debug */,
+				35E9B9572A9B5735007A3073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35E9B9582A9B5735007A3073 /* Build configuration list for PBXNativeTarget "DemoSecureChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E9B9592A9B5735007A3073 /* Debug */,
+				35E9B95A2A9B5735007A3073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35E9B95B2A9B5735007A3073 /* Build configuration list for PBXNativeTarget "DemoSecureChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E9B95C2A9B5735007A3073 /* Debug */,
+				35E9B95D2A9B5735007A3073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35E9B95E2A9B5735007A3073 /* Build configuration list for PBXNativeTarget "DemoSecureChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E9B95F2A9B5735007A3073 /* Debug */,
+				35E9B9602A9B5735007A3073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35E9B92C2A9B5732007A3073 /* Project object */;
+}

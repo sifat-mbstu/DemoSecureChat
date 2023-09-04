@@ -1,0 +1,52 @@
+PODS:
+  - CocoaAsyncSocket (7.6.5)
+  - CocoaLumberjack/Core (3.8.0)
+  - CocoaLumberjack/Swift (3.8.0):
+    - CocoaLumberjack/Core
+  - CocoaMQTT (1.3.0-rc.2):
+    - CocoaMQTT/Core (= 1.3.0-rc.2)
+  - CocoaMQTT/Core (1.3.0-rc.2):
+    - CocoaAsyncSocket (~> 7.6.3)
+  - CryptoSwift (1.4.3)
+  - KeychainAccess (4.2.2)
+  - SignalProtocolC (2.3.2)
+  - SignalProtocolObjC (1.1.0):
+    - SignalProtocolC (~> 2.3.2)
+  - Starscream (4.0.4)
+
+DEPENDENCIES:
+  - CocoaLumberjack/Swift
+  - CocoaMQTT (from `DevelopmentPods/COCOAMQTT/`)
+  - CryptoSwift (~> 1.4.1)
+  - KeychainAccess
+  - SignalProtocolC
+  - SignalProtocolObjC
+  - Starscream (~> 4.0.4)
+
+SPEC REPOS:
+  trunk:
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+    - CryptoSwift
+    - KeychainAccess
+    - SignalProtocolC
+    - SignalProtocolObjC
+    - Starscream
+
+EXTERNAL SOURCES:
+  CocoaMQTT:
+    :path: DevelopmentPods/COCOAMQTT/
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  CocoaLumberjack: 78abfb691154e2a9df8ded4350d504ee19d90732
+  CocoaMQTT: eac54c14c2a1404158fe01f04bd30139d562f7e6
+  CryptoSwift: a0799ee936271bd2253a006f1e4523df21845000
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  SignalProtocolC: 051512e9f3abfeb4120c5e9673af9ae0ee370070
+  SignalProtocolObjC: b992ed29c3b7b453510ff0102ed16ef143f7efd2
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+
+PODFILE CHECKSUM: 9670a55507cab3a7228a48c9a0a623b8caeee1c1
+
+COCOAPODS: 1.12.1
